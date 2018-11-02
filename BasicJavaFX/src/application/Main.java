@@ -46,7 +46,7 @@ public class Main extends Application {
 
 		@FXML
 		public void initialize() {
-			forestview.setEffect(new GaussianBlur(2));
+			forestview.setEffect(new GaussianBlur(20));
 		}
 
 	}
