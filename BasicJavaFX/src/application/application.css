@@ -1,9 +1,7 @@
 .mybutton{
 	-fx-background-color: orange;
 	-fx-border-color: orange;
-	-fx-text-fill: white;
-	
-	
+	-fx-text-fill: white;	
 }
 
 .mytitle{
@@ -16,3 +14,11 @@
 .mypane{
 	-fx-background-color: linear-gradient(#2A5058, #61a2b1);
 	}
+	
+
+.fondo{
+	-fx-background-image: url("blueforest.jpg");
+	-fx-background-size: 100%;
+	-fx-background-repeat: no-repeat ;
+	
+}

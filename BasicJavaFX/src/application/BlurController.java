@@ -10,6 +10,9 @@ public class BlurController {
 	@FXML
     private ImageView imageView;   
 	private Ellipse ellipse;
+	
+//	@FXML
+//	private Pane mypane;   
 
 	
 	@FXML
@@ -35,7 +38,8 @@ public class BlurController {
 
 	@FXML
     public void setblur() {           
-             imageView.setEffect(new GaussianBlur(10));
+             imageView.setEffect(new GaussianBlur(5));
+//             mypane.setEffect(new GaussianBlur(10));
     }
 	
 	@FXML

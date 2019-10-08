@@ -7,7 +7,8 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="477.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BlurController">
   <children>
-    <ImageView fx:id="imageView" fitHeight="224.0" fitWidth="400.0" layoutX="29.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+      <!-- <Pane fx:id="mypane" prefHeight="200.0" prefWidth="200.0" styleClass="fondo" stylesheets="@application.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" /> -->
+    <ImageView fx:id="imageView" fitHeight="224.0" fitWidth="400.0" layoutX="29.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
          <image>
             <Image url="@blueforest.jpg" />
          </image>

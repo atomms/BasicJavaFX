@@ -8,6 +8,13 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+/**
+ * 
+ * @author ernesto
+ * @version 1.0
+ * @see BlurController
+ *
+ */
 public class Main extends Application {
 
 	private AnchorPane mypane;
