@@ -1,5 +1,5 @@
 package application;
-	
+
 import java.io.IOException;
 
 import javafx.application.Application;
@@ -18,42 +18,37 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
 	private AnchorPane mypane;
-	
+
 	/**
 	 * crea el Stage
 	 */
-	
-    @Override
-    public void start(Stage stage) throws IOException {
-    
-    	/**
-    	 * carga el controlador y la vista fxml 
-    	 */
-    	
-    	FXMLLoader loader = new FXMLLoader(
-            getClass().getResource(
-                "forest.fxml"
-            )
-        );
 
-        mypane = (AnchorPane) loader.load();
+	@Override
+	public void start(Stage stage) throws IOException {
 
-        /**
-         * titula y coloca la escena en el stage
-         */
-        stage.setTitle("Where's the squirrel?");
-        stage.setScene(new Scene(mypane));
-        stage.show();
-    }
+		/**
+		 * carga la vista fxml como panel
+		 */
 
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("forest.fxml"));
 
-    /**
-     * arranca la aplicación
-     * @param args
-     */
-    
-    public static void main(String[] args) {
-        launch(args);
-    }
-    
+		mypane = (AnchorPane) loader.load();
+
+		/**
+		 * titula y coloca la escena en el stage
+		 */
+		stage.setTitle("Where's the squirrel?");
+		stage.setScene(new Scene(mypane));
+		stage.show();
+	}
+
+	/**
+	 * arranca la aplicación
+	 * 
+	 */
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
 }

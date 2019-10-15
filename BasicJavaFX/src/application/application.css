@@ -1,7 +1,16 @@
-.mybutton{
-	-fx-background-color: orange;
-	-fx-border-color: orange;
-	-fx-text-fill: white;	
+.buttonon{
+	-fx-background-color: #3082E2;
+	-fx-background-radius: 2px;
+	-fx-border-color: #3082E2;
+	-fx-text-fill: white;
+	-fx-border-radius: 2px;
+}
+
+.buttonoff{
+	-fx-background-color: white;
+	-fx-border-color: #3082E2;
+	-fx-text-fill: #3082E2;
+	-fx-border-radius: 2px;	
 }
 
 .mytitle{

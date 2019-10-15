@@ -2,16 +2,16 @@ package application;
 
 import javafx.fxml.FXML;
 import javafx.scene.effect.GaussianBlur;
-import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 
 public class BlurController {
 	
-	@FXML
-    private ImageView imageView;   
+//	@FXML
+//    private ImageView imageView;   
 //	private Ellipse ellipse;
 	
-//	@FXML
-//	private Pane mypane;   
+	@FXML
+	private Pane mypane;   
 
 	
 //	@FXML
@@ -37,7 +37,13 @@ public class BlurController {
 
 	@FXML
     public void setblur() {           
-             imageView.setEffect(new GaussianBlur(5));
+             mypane.setEffect(new GaussianBlur(5));
+//             mypane.setEffect(new GaussianBlur(10));
+    }
+	
+	@FXML
+    public void setfocus() {           
+             mypane.setEffect(new GaussianBlur(0));
 //             mypane.setEffect(new GaussianBlur(10));
     }
 	
