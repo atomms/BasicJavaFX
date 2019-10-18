@@ -4,6 +4,12 @@ import javafx.fxml.FXML;
 import javafx.scene.effect.GaussianBlur;
 import javafx.scene.layout.Pane;
 
+/**
+ * 
+ * @author ernesto
+ *
+ */
+
 public class BlurController {
 	
 //	@FXML
