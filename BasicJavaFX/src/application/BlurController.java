@@ -12,7 +12,7 @@ public class BlurController {
 
 	@FXML
     public void setblur() {           
-             imageView.setEffect(new GaussianBlur(5));
+             imageView.setEffect(new GaussianBlur(20));
 
     }
 	
