@@ -1,11 +1,8 @@
 package application;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.effect.GaussianBlur;
-import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
+import javafx.scene.layout.Pane;
 
 /**
  * 
@@ -20,7 +17,7 @@ public class BlurController {
 //	private Ellipse ellipse;
 	
 	@FXML
-	private AnchorPane mypane;
+	private Pane mypane;   
 
 	
 //	@FXML
@@ -59,23 +56,7 @@ public class BlurController {
 	@FXML
 	private void handleClose() {
 	
-        System.exit(0);System.exit(0);
-	}
-	
-	@FXML
-	private void openStage() {
-	
-		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("forest.fxml"));
-			mypane = (AnchorPane) loader.load();
-			Scene scene = new Scene(mypane);
-			Stage stage = new Stage();
-			stage.setScene(scene);
-			stage.show();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		
+	        System.exit(0);
 	}
 	
 }
