@@ -7,11 +7,12 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="477.0" style="-fx-background-color: white;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BlurController">
   <children>
-      <Pane layoutX="40.0" layoutY="40.0" prefHeight="163.0" prefWidth="477.0" styleClass="fondo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="mypane" layoutX="40.0" layoutY="40.0" prefHeight="163.0" prefWidth="477.0" styleClass="fondo" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <HBox layoutX="327.8999938964844" layoutY="259.8999938964844" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
          <children>
             <Button mnemonicParsing="false" onAction="#setblur" styleClass="buttonoff" text="Blur" />
             <Button mnemonicParsing="false" onAction="#setfocus" styleClass="buttonoff" text="Focus" />
+            <Button mnemonicParsing="false" onAction="#openStage" styleClass="buttonoff" text="Open" />
             <Button mnemonicParsing="false" onAction="#handleClose" styleClass="buttonon" text="Close" />
          </children>
       </HBox>

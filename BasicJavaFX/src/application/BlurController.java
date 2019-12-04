@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.effect.GaussianBlur;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
@@ -15,45 +16,22 @@ import javafx.stage.Stage;
 
 public class BlurController {
 	
-//	@FXML
-//    private ImageView imageView;   
-//	private Ellipse ellipse;
-	
-	@FXML
-	private AnchorPane mypane;
 
 	
-//	@FXML
-//    public void setclip() {           
-//        ellipse = new Ellipse();
-////        circle = new Circle((imageView.getFitWidth())*0.2);
-//
-//        ellipse.centerXProperty().setValue(120);
-//        ellipse.centerYProperty().setValue(40);
-//        ellipse.radiusXProperty().setValue(90);
-//        ellipse.radiusYProperty().setValue(90);
-//        
-////        importing and modifying sizes
-////    	ellipse.radiusXProperty().setValue(imageView.getFitWidth()*0.1);
-////    	ellipse.radiusYProperty().setValue(imageView.getFitHeight()*0.17);
-//        
-//        imageView.setClip(ellipse);
-//
-//////apply a shadow effect.
-////        imageView.setEffect(new DropShadow(10, Color.BLACK));
-//
-//    }
+	@FXML
+	private Pane mypane;
+
+	
 
 	@FXML
     public void setblur() {           
              mypane.setEffect(new GaussianBlur(5));
-//             mypane.setEffect(new GaussianBlur(10));
+
     }
 	
 	@FXML
     public void setfocus() {           
              mypane.setEffect(new GaussianBlur(0));
-//             mypane.setEffect(new GaussianBlur(10));
     }
 	
 	@FXML
@@ -66,13 +44,18 @@ public class BlurController {
 	private void openStage() {
 	
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("forest.fxml"));
+			
+			//añadir
+			FXMLLoader loader = new FXMLLoader(getClass()
+					.getResource("forest.fxml"));
+			//añadir
 			mypane = (AnchorPane) loader.load();
+			
 			Scene scene = new Scene(mypane);
 			Stage stage = new Stage();
 			stage.setScene(scene);
 			stage.show();
-		} catch (Exception e) {
+		} catch (Exception e)  {
 			// TODO: handle exception
 		}
 		
